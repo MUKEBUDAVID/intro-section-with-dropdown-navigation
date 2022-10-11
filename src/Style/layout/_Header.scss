@@ -1,0 +1,78 @@
+@media screen and (min-width: map-get($breakpoint, Desktop)) {
+.header {
+  // background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100px;
+  justify-content: space-between;
+
+
+  .left{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  // background-color: aqua;
+  margin-left: 5%;
+  width:40%;
+  
+}
+.logo{
+    width: 5vw;
+    height: 2vw;
+    cursor: pointer;
+    margin-right: 50px;
+}
+  .add{
+  display:flex ;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 5%;
+  width: 25%;
+  // background-color: rgb(204, 168, 50);
+
+  }
+  .login{
+    border: 0px transparent solid;
+    width: 100px;
+    height: 50px;
+    color:$Medium_Gray;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    &:hover{
+      color:$Almost_Black;
+    }
+  }
+
+  .register{
+    border: 2px $Medium_Gray  solid;
+    width: 100px;
+    height: 50px;
+    border-radius: 16px;
+    background-color: transparent;
+    color:$Medium_Gray;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    
+    &:hover{
+      color:$Almost_Black;
+      border: 2px $Almost_Black  solid;
+    }
+  }
+
+
+
+
+
+
+
+
+
+}
+}
+
+

@@ -1,0 +1,52 @@
+@media screen and (min-width: map-get($breakpoint, Desktop)) {
+.header{
+
+   ul {
+    display: flex;
+    width: 75%;
+    height:30px;
+    // background-color: cadetblue;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size:1.1vw;
+    color:$Medium_Gray;
+    cursor: pointer;
+
+  }
+  ul li:hover:not(:nth-child(3)){
+    color:$Almost_Black;
+  }
+  .arrow{
+    width: .9vw;
+    margin:0px;
+    }
+  .arrow:hover{
+    color:$Almost_Black;
+}
+
+
+@for $var from 1 to 3 {
+ul li:nth-child(#{$var}){
+    height:50px ;
+    width: 7vw;
+    // background: #000;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+}    
+}
+
+}
+
+ 
+}
+  
+
