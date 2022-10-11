@@ -63,18 +63,18 @@ function Nav()  {
             let temp = "";
             if (index === 0) {
               temp = (
-                <li className="drop" onMouseEnter={rotateArrow_left} onMouseLeave={returnrotation_left} style={{position:'relative'}} >
+                <li className="drop" key={`${index}+${element}`} onMouseEnter={rotateArrow_left} onMouseLeave={returnrotation_left} style={{position:'relative'}} >
                   {element} <img src={arrow1} alt="arrow"  className="arrow" /> <CardLeft visibilityLeft={visibilityLeft} />
                 </li>
               );
             } else if (index === 1) {
               temp = (
-                <li className="drop" onMouseEnter={rotateArrow_rigth} onMouseLeave={returnrotation_rigth}>
+                <li className="drop" key={`${index}+${element}`} onMouseEnter={rotateArrow_rigth} onMouseLeave={returnrotation_rigth}>
                   {element} <img src={arrow2} alt="arrow" className="arrow" /> <CardRigth visibilityRigth={visibilityRigth} />
                 </li>
               );
             } else {
-              temp = <li>{element}</li>;
+              temp = <li key={`${index}+${element}`}>{element}</li>;
             }
 
             return temp;
