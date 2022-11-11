@@ -1,12 +1,13 @@
 @media screen and (min-width: map-get($breakpoint, Desktop)) {
 .header {
-  background-color: red;
+  // background-color: red;
   display: flex;
   flex-direction: row;
   width: 100vw;
   height: 100px;
   justify-content: space-between;
-
+  
+   
 
   .left{
     display: flex;
@@ -75,4 +76,31 @@
 }
 }
 
+
+
+
+@media screen and (max-width: map-get($breakpoint, Mobile)) {
+.header {
+  // background-color: red;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  }
+  .logo{
+    width: 25vw;
+    height: 10vw;
+    cursor: pointer;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.Ambouger{
+    width: 7vw;
+    height: 5vw;
+    cursor: pointer;
+    margin-right: 25px;
+}
+}
 

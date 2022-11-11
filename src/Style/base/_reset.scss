@@ -5,13 +5,38 @@
     padding: 0;
     box-sizing: inherit;
 }
+@font-face {
+    font-family: 'epilogueitalic';
+    src: url('../../assets/font/epilogue-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../../assets/font/epilogue-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
+
+
+
+
+@font-face {
+    font-family: 'epilogueregular';
+    src: url('../../assets/font/epilogue-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../../assets/font/epilogue-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 html {
     // 10px div by def of 16px
     font-size: 62.5%;
+    overflow: hidden;
+     
 }
 
 body {
     box-sizing: border-box;
     // background: $colour-secondary;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'epilogueregular','epilogueitalic', sans-serif;
 }

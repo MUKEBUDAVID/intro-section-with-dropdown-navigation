@@ -10,6 +10,8 @@
     align-items: center;
   }
 
+  
+
   ul li {
     display: flex;
     justify-content: space-around;
@@ -48,5 +50,280 @@ ul li:nth-child(#{$var}){
 
  
 }
+ 
+
+
+
+@media screen and (max-width: map-get($breakpoint, Mobile)) {
+.menu_rouleur{
+
+  .navigation {
+     // background-color: blue;
+    position: relative;
+    width: 75%;
+    height:530px;
+    margin-top: 621px;
+    
+   }
+  .navigation  li{
+    list-style-type: none;
+    flex-shrink: 0;
+   
+  }
   
+
+
+
+
+
+/* liste 1 */  
+  
+  .list_1{
+    // background-color: red;
+    margin-top: 24px;
+    width: 145px;
+    height:30px;
+    margin-left: 20px;
+    
+    overflow: hidden;
+    font-size: 20px;
+    position: relative;
+    color:$Medium_Gray;
+    
+    
+    
+  }
+  
+  
+  .flex_list1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 145px;
+    height: 20px;
+    
+    // background: gold ;
+    position: relative;
+  }
+ 
+ 
+.par_1{
+    display: block;
+    width: inherit;
+    height: inherit;
+    font-size: 20px ;
+    font-weight: 400;
+    } 
+  
+  .arrow1{
+    position: absolute;
+    transform:rotate(0deg);
+    transition: transform 1000ms;
+    width: 10px;
+    height: 9px;
+    right: 33px;
+    top: 7px;
+    color: $Medium_Gray;
+    }
+    
+   
+  
+  .sous_list_1{
+    // background-color: darkviolet;
+    position: absolute;
+    width: 100%;
+    height: 144px;
+    transform: translateY(10%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    
+  }
+  .sous_list_1 li{
+    // background-color: darkgoldenrod;
+    width: 80%;
+    font-size: 17px;
+    font-family:'Epilogue', sans-serif ;
+    color:$Medium_Gray;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-shrink: 0;
+  }
+  .sous_list_1 li img{
+    width: 20px;
+    height: 20px;
+   
+  }
+   
+// aniamtions pour deroule les sous-menus de la side bar
+
+ @keyframes dam_list1 {
+    0%{
+      height: 30px;
+      
+     
+    }
+    50%{
+      height: 100px;
+      
+     
+    }
+
+    100%{
+      height: 200px;
+      
+      
+    }
+    
+   }
+
+
+    @keyframes dam_list2 {
+    0%{
+      height: 20px;
+      
+      
+    }
+    50%{
+      height: 100px;
+      
+     
+    }
+
+    100%{
+      height: 160px;
+      
+      
+      
+    }
+    
+   }
+
+
+  
+// class pour jsx
+
+   .anime_dame_list1{
+    animation:dam_list1 1ms  both ;
+   }
+
+
+   .anime_dame_list1_reverse{
+    animation:dam_list1 1ms  both reverse;
+   }
+
+
+   .anime_dame_list2{
+    animation:dam_list2 10ms   both  ease-in-out;
+   }
+
+
+   .anime_dame_list2_reverse{
+    animation:dam_list2 10ms   both reverse;
+   }
+
+
+
+/* liste 2 */
+
+  .list_2{
+    
+    // background-color: aqua;
+    width: 145px;
+    height:20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+    font-size: 20px;
+    color:$Medium_Gray;
+    
+    
+    
+    
+}
+.flex_list2{
+  position: relative;
+}
+
+
+.par_2{
+  display: block;
+  width: 200%;
+  height: inherit;
+  font-size: 20px;
+  font-weight: 400;
+  
+}
+
+  .arrow2{
+    position: absolute;
+    transform:rotate(0deg);
+    transition: transform 1000ms;
+    width: 10px;
+    height: 9px;
+    right: 36px;
+    top: 7px;
+    color: $Medium_Gray;
+    
+    
+    }
+  
+    .sous_list_2{
+      // background-color: blueviolet;
+      display: flex;
+      flex-direction:column ;
+      align-items: flex-start;
+      justify-content: space-around;
+      width: 80%;
+      height: 130px;
+      margin-top: 10px;
+      margin-left: 13px;;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* liste 3 */
+
+.liste_3{
+    
+  // background-color: aqua;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color:$Medium_Gray;
+    
+  }
+
+  /* liste 4 */
+
+  .liste_4{
+    
+    // background-color: aqua;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color:$Medium_Gray;
+  }
+
+}
+
+ 
+}
 

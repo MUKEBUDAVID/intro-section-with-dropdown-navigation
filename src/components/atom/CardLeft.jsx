@@ -30,7 +30,8 @@ function CardLeft({visibilityLeft}) {
   ]);
 
 
-  if (visibilityLeft === true) {
+
+  if (visibilityLeft=== true) {
     return (
       <aside className="cardleft">
         {datacard.map((element) => {
